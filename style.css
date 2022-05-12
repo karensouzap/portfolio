@@ -1,47 +1,67 @@
-*{
-  padding: 0;
+*{padding: 0; /*zerando padding e margin de todos os elementos para evitar conflitos*/
   margin: 0;
-  box-sizing: border-box;
-  font-family:'Poppins', sans-serif;
+  box-sizing: border-box; /*contem todas as estruturas dentro de cada div correspondente*/
 }
 
-ul{
-  list-style: none;
-}
-a{
-  text-decoration: none;
-}
 body{
-  background:url(./IMAGEM/pexels-daan-stevens-939331.jpg) no-repeat center center fixed;
-  background-size:cover;
+  background:url(./IMAGEM/pexels-andreea-ch-1166643.jpg) no-repeat center center fixed ; /*fixa, centraliza e não repete a imagem*/
+  background-size:cover; /*preenche todo o fundo com a imagem*/
+  height: 1000vh;
+  max-height: 1000px;
 }
 
-.container {
+#div_logo_e_contatos{
+  margin: 20px; /*margem da div*/
+}
+
+#div_logo_e_contatos img{
+  border-radius: 3%; /*arredondar bordas do Logo*/
+}
+
+#div_logo_e_contatos a{
+  float: right; /*retirado do seu fluxo normal e colocado ao longo do lado direito ou esquerdo */
+  margin: 20px; /*margem ao redor dos icones*/
+}
+
+.container{
   text-align: center;
+  font-family: 'Kite One', sans-serif;
 }
 
+.container .nome_area_atuacao{
+  font-family: 'Codystar', cursive;
+  font-size: 25px ; /*tamanho*/
+  font-style: italic; /* Estilo*/
+  font-weight: 500; /* grossura? */
 }
-.container .name h1{
+
+.container .nome_area_atuacao h1{
+  font-family: 'Ephesis', cursive;
   font-size: 60px;
 }
 
-.container .name h5{
-  font-size: 25px;
-}
-
-#about p{
-  max-width: 600px;
+#apresentacao p{
+  font-family: 'Kite One', sans-serif;
+  text-align: justify;
+  max-width: 400px;
   margin: 0 auto;
 }
 .form{
+  font-family: 'Ephesis', cursive;
+  font-size: 30px;
   width:40%;
   margin: 0 auto;
 }
 
 .form input{
 width: 50%;
+font-size: 20px;
+font-family: 'Ephesis', cursive;
 }
 
 .form button{
   width: 15% ;
+  font-family: 'Kite One', sans-serif;
+  font-size: 15px;
 }
+
